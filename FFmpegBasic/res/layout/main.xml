@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:id="@+id/LinearLayout"
+    tools:context=".Home"
+    android:background="#ffffff"
+    android:orientation="vertical">
+	
+	<!--
+    <EditText
+        android:id="@+id/command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:hint="@string/ffmpeg_cmd_hint"
+        android:gravity="start" />
+
+      
+    <Button
+        android:id="@+id/run_command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/run"
+        android:padding="10dp"/>
+	-->
+	<LinearLayout 
+	    android:id="@+id/video_output"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	    <TextView android:id="@+id/bandwidth_PLR"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        />
+	</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/command_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+</LinearLayout>
